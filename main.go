@@ -9,7 +9,7 @@ import (
 	"strconv"
 
 	"github.com/pborman/uuid"
-	elastic "gopkg.in/olivere/elastic.v7"
+	elastic "gopkg.in/olivere/elastic.v3"
 )
 
 type Location struct {
