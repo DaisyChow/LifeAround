@@ -32,7 +32,7 @@ const (
 	//PROJECT_ID = "around-xxx"
 	//BT_INSTANCE = "around-post"
 	// Needs to update this URL if you deploy it to cloud.
-	ES_URL = "http://34.70.215.134:9200"
+	ES_URL = "http://34.70.27.4:9200"
 )
 
 func main() {
@@ -86,7 +86,6 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 	id := uuid.New()
 	// Save to ES.
 	saveToES(&p, id)
-
 }
 
 // Save a post to ElasticSearch
