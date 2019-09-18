@@ -161,7 +161,7 @@ func handlerPost(w http.ResponseWriter, r *http.Request) {
 	saveToES(p, id)
 
 	// Save to BigTable.
-	saveToBigTable(p, id)
+	// saveToBigTable(p, id)
 }
 
 func saveToGCS(ctx context.Context, r io.Reader, bucketName, name string) (*storage.ObjectHandle, *storage.ObjectAttrs, error) {
